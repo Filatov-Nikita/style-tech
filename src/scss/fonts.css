@@ -1,0 +1,23 @@
+@font-face {
+  font-family: druk;
+  font-weight: 700;
+  src:
+    url('/fonts/druk/DrukCyr-Bold.woff') format('woff'),
+    url('/fonts/druk/DrukCyr-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: unbounded;
+  font-weight: 300;
+  src:
+    url('/fonts/unbounded/Unbounded-Light.woff') format('woff'),
+    url('/fonts/unbounded/Unbounded-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: zekton;
+  font-weight: 400;
+  src:
+    url('/fonts/zekton/zekton-regular.woff') format('woff'),
+    url('/fonts/zekton/zekton-regular.woff2') format('woff2');
+}

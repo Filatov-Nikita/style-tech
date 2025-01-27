@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+@import './fonts.css';
+@import './base.css';
+
+@theme {
+  --color-*: initial;
+  --color-primary: #E94601;
+  --color-accent: #FF540B;
+  --color-body: #F0EFDB;
+  --font-druk: 'druk', 'sans-serif';
+  --font-unbounded: 'unbounded', 'sans-serif';
+  --font-zekton: 'zekton', 'sans-serif';
+}
