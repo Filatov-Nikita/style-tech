@@ -1,9 +1,9 @@
 <template>
-  <div class=" font-unbounded">
-    1
-  </div>
+  <Suspense>
+    <Landing />
+  </Suspense>
 </template>
 
 <script setup>
-
+  import Landing from './components/Landing.vue';
 </script>
