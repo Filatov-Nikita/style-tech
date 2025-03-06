@@ -1,9 +1,9 @@
-@import 'tailwindcss';
-@import './fonts.css';
-@import './base.css';
+@import 'normalize.css';
+@import './fonts.scss';
+@import './base.scss';
+@import './components/index.scss';
 
-@theme {
-  --color-*: initial;
+:root {
   --color-primary: #E94601;
   --color-primary-hover: #D23F01;
   --color-accent: #FF540B;
