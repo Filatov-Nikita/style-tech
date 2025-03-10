@@ -1,7 +1,21 @@
 .wrapper {
   max-width: 1350px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @include lg {
+    max-width: 1024px;
+  }
+
+  @include md {
+    max-width: 768px;
+  }
+
+  @include sm {
+    max-width: 540px;
+  }
+
+  @include xs {
+    max-width: 380px;
+  }
 }

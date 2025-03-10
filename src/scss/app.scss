@@ -1,6 +1,7 @@
 @import 'normalize.css';
 @import './fonts.scss';
 @import './base.scss';
+@import './mixins/index.scss';
 @import './components/index.scss';
 
 :root {
@@ -8,7 +9,7 @@
   --color-primary-hover: #D23F01;
   --color-accent: #FF540B;
   --color-body: #F0EFDB;
-  --color-bg: #3B3B3B;
+  --color-bg: #262626;
   --font-druk: 'druk', 'sans-serif';
   --font-unbounded: 'unbounded', 'sans-serif';
   --font-zekton: 'zekton', 'sans-serif';
