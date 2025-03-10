@@ -2,16 +2,32 @@
   font-family: druk;
   font-weight: 700;
   src:
-    url('/fonts/druk/DrukCyr-Bold.woff') format('woff'),
-    url('/fonts/druk/DrukCyr-Bold.woff2') format('woff2');
+    url('/fonts/druk/druktextwidecyr-bold.woff2') format('woff2'),
+    url('/fonts/druk/druktextwidecyr-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: unbounded;
+  font-weight: 200;
+  src:
+    url('/fonts/unbounded/Unbounded-ExtraLight.woff2') format('woff2'),
+    url('/fonts/unbounded/Unbounded-ExtraLight.woff') format('woff');
 }
 
 @font-face {
   font-family: unbounded;
   font-weight: 300;
   src:
-    url('/fonts/unbounded/Unbounded-Light.woff') format('woff'),
-    url('/fonts/unbounded/Unbounded-Light.woff2') format('woff2');
+    url('/fonts/unbounded/Unbounded-Light.woff2') format('woff2'),
+    url('/fonts/unbounded/Unbounded-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: unbounded;
+  font-weight: 400;
+  src:
+    url('/fonts/unbounded/Unbounded-Regular.woff2') format('woff2'),
+    url('/fonts/unbounded/Unbounded-Regular.woff') format('woff');
 }
 
 @font-face {
