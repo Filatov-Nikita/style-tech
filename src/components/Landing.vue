@@ -1,9 +1,9 @@
 <template>
-  <div class="@container">
-    <Footer class="@max-sm:hidden" />
-  </div>
+  <main>
+    <SectionMain />
+  </main>
 </template>
 
 <script setup>
-  import Footer from './Blocks/Footer.vue';
+  import SectionMain from './Sections/Main.vue';
 </script>
