@@ -28,6 +28,13 @@
 
 <style scoped lang="scss">
   .section-main {
+    @include screen($md) {
+      height: 100vh;
+      background-image: url('@/assets/images/main-bg.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
     &__wrap {
       position: relative;
     }
@@ -38,20 +45,49 @@
       top: 0;
       left: 0;
       width: 100%;
+
+      @include screen($md) {
+        position: static;
+      }
     }
 
     &__grid {
       display: grid;
       grid-template-columns: calc(47% - 40px) calc(53% - 40px);
       column-gap: 80px;
+
+      @include screen($lg) {
+        grid-template-columns: calc(60% - 20px) calc(40% - 20px);
+        column-gap: 40px;
+      }
+
+      @include screen($md) {
+        grid-template-columns: 100%;
+      }
     }
 
     &__left {
       padding-top: 190px;
+
+      @include screen($lg) {
+        padding-top: 130px;
+      }
+
+      @include screen($md) {
+        padding-top: 30px;
+      }
     }
 
     &__right {
       margin-right: -75px;
+
+      @include screen($lg) {
+        margin-right: -40px;
+      }
+
+      @include screen($md) {
+        display: none;
+      }
     }
   }
 
