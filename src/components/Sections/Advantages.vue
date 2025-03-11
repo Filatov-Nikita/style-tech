@@ -1,5 +1,5 @@
 <template>
-  <section class="section-advantages">
+  <section id="advantages" class="section-advantages">
     <div class="wrapper">
       <h2 class="h2 section-advantages__title">Преимущества</h2>
       <div class="section-advantages__wrap">

@@ -1,5 +1,5 @@
 <template>
-  <section class="section-partners">
+  <section id="partners" class="section-partners">
     <div class="wrapper">
       <h2 class="h2 section-partners__title">Партнеры</h2>
       <div class="items">
