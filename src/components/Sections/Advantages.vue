@@ -35,16 +35,18 @@
 
 <style scoped lang="scss">
   .section-advantages {
-    padding: 80px 0;
-
     &__title {
       margin-bottom: 50px;
+
+      @include sm {
+        margin-bottom: 32px;
+      }
     }
 
     &__wrap {
       display: flex;
       flex-wrap: wrap;
-      margin: 7px;
+      margin: -7px;
     }
   }
 
@@ -55,6 +57,14 @@
     border-radius: 30px;
     padding: 30px 20px 70px 30px;
 
+    @include lg {
+      width: calc(100% - 14px);
+    }
+
+    @include sm {
+      padding: 24px 15px 45px 20px;
+    }
+
     &__index {
       display: block;
       width: 100%;
@@ -64,6 +74,11 @@
       line-height: 1.15;
       color: #FD5F0F;
       margin-bottom: 25px;
+
+      @include sm {
+        font-size: 60px;
+        margin-bottom: 20px;
+      }
     }
 
     &__title {
@@ -72,12 +87,20 @@
       font-weight: 700;
       line-height: 1.15;
       margin-bottom: 16px;
+
+      @include sm {
+        font-size: 20px;
+      }
     }
 
     &__text {
       font-weight: 200;
       font-size: 16px;
       line-height: 1.35;
+
+      @include sm {
+        font-size: 14px;
+      }
     }
   }
 </style>

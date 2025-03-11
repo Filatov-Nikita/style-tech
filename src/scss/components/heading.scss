@@ -1,8 +1,18 @@
+@use '../mixins/screen.scss' as *;
+
 h1, .h1 {
   font-weight: 700;
   font-size: 60px;
   line-height: 1.15;
   font-family: var(--font-druk);
+
+  @include sm {
+    font-size: 48px;
+  }
+
+  @include xs {
+    font-size: 32px;
+  }
 }
 
 h2, .h2 {
@@ -10,4 +20,12 @@ h2, .h2 {
   font-size: 52px;
   line-height: 1.15;
   font-family: var(--font-druk);
+
+  @include sm {
+    font-size: 42px;
+  }
+
+  @include xs {
+    font-size: 28px;
+  }
 }

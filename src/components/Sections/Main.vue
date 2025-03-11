@@ -30,9 +30,16 @@
   .section-main {
     @include screen($md) {
       height: 100vh;
+      min-height: 650px;
       background-image: url('@/assets/images/main-bg.jpg');
       background-size: cover;
-      background-position: center;
+      background-position-y: bottom;
+      background-position-x: center;
+
+    }
+
+    @include screen($sm) {
+      background-position-x: 20%;
     }
 
     &__wrap {
@@ -98,12 +105,21 @@
     background-size: cover;
     padding: 60px 40px 30px 45px;
 
+    @include sm {
+      padding: 30px 10px 50px 25px;
+    }
+
     &__text {
       margin-top: 30px;
       font-weight: 200;
       font-size: 24px;
       line-height: 1.25;
       color: var(--color-accent);
+      margin-bottom: -25px;
+
+      @include sm {
+        font-size: 16px;
+      }
     }
 
     &__btn {

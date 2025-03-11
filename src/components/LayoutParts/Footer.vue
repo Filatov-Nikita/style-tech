@@ -29,13 +29,16 @@
 
 <style scoped lang="scss">
   .footer {
-    padding: 80px 0;
+    @include sm {
+      padding-bottom: 40px;
+    }
 
     &__wrap {
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
       justify-content: space-between;
+      row-gap: 15px;
     }
 
     &__address {
@@ -43,11 +46,26 @@
       font-size: 20px;
       line-height: 1.35;
       margin-bottom: 25px;
+
+      @include sm {
+        font-size: 16px;
+      }
+    }
+
+    &__body {
+      @include sm {
+        width: 100%;
+        order: 1;
+      }
     }
   }
 
   .logo {
     width: 141px;
+
+    @include sm {
+      width: 120px;
+    }
 
     &:hover {
       opacity: 0.8;

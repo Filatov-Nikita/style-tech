@@ -20,10 +20,12 @@
 
 <style scoped lang="scss">
   .section-partners {
-    padding: 80px 0;
-
     &__title {
       margin-bottom: 50px;
+
+      @include sm {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -31,6 +33,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+
+    @include sm {
+      margin: -6px;
+    }
   }
 
   .item {
@@ -42,8 +48,20 @@
     background-image: url('@/assets/images/texture.png');
     background-size: cover;
 
+    @include md {
+      width: 100%;
+    }
+
+    @include sm {
+      margin: 6px;
+    }
+
     &__photo {
       margin: 0 auto;
+
+      @include sm {
+        width: 50%;
+      }
     }
   }
 </style>
