@@ -28,8 +28,8 @@
 
     &__wrap {
       display: grid;
-      grid-template-columns: 500px 1fr;
-      column-gap: 140px;
+      grid-template-columns: calc(47% - 40px) calc(53% - 40px);
+      column-gap: 80px;
     }
   }
 

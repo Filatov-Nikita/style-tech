@@ -1,21 +1,13 @@
 .wrapper {
-  max-width: 1350px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 30px;
-
-  @include lg {
-    max-width: 1024px;
-  }
+  padding: 0 75px;
 
   @include md {
-    max-width: 768px;
+    padding: 0 30px;
   }
 
   @include sm {
-    max-width: 540px;
-  }
-
-  @include xs {
-    max-width: 380px;
+    padding: 0 16px;
   }
 }
