@@ -9,6 +9,14 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     }
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+        additionalData: `@use "@/scss/mixins/screen.scss" as *;`
+      },
+    },
+  },
   plugins: [
     vue(),
   ],

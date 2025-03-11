@@ -1,8 +1,7 @@
-@import 'normalize.css';
-@import './fonts.scss';
-@import './base.scss';
-@import './mixins/index.scss';
-@import './components/index.scss';
+@use 'normalize.css';
+@use './fonts.scss';
+@use './base.scss';
+@use './components/index.scss';
 
 :root {
   --color-primary: #E94601;
