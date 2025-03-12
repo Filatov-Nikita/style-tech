@@ -8,7 +8,7 @@
             <div class="sticker">
               <h1 class="h1">Ваш гид по&nbsp;технике</h1>
               <p class="sticker__text">индивидуальные консультации с&nbsp;экпертом по&nbsp;бытовой технике в&nbsp;Планете</p>
-              <BaseButton class="sticker__btn">Записаться</BaseButton>
+              <BaseButton class="sticker__btn" @click="$order.show">Записаться</BaseButton>
             </div>
           </div>
           <div class="section-main__right">

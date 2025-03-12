@@ -1,9 +1,9 @@
 <template>
   <nav class="nav-menu">
-    <a class="nav-menu__item" href="#about">Об услуге</a>
-    <a class="nav-menu__item" href="#advantages">Преимущества</a>
-    <a class="nav-menu__item" href="#order">Запись</a>
-    <a class="nav-menu__item" href="#partners">Партнеры</a>
+    <a class="nav-menu__item" href="#about" @click.prevent="$scroll.onShowView">Об услуге</a>
+    <a class="nav-menu__item" href="#advantages" @click.prevent="$scroll.onShowView">Преимущества</a>
+    <a class="nav-menu__item" href="#order" @click.prevent="$scroll.onShowView">Запись</a>
+    <a class="nav-menu__item" href="#partners" @click.prevent="$scroll.onShowView">Партнеры</a>
   </nav>
 </template>
 

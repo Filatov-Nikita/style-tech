@@ -11,16 +11,24 @@
             </div>
             <div class="nav">
               <div class="nav-wrap">
-                <a class="nav-link" href="#about" @click.prevent="scroll">Об услуге</a>
+                <a class="nav-link" href="#about" @click.prevent="$scroll.onShowView($event); emit('close')">
+                  Об услуге
+                </a>
               </div>
               <div class="nav-wrap">
-                <a class="nav-link" href="#advantages" @click.prevent="scroll">Преимущества</a>
+                <a class="nav-link" href="#advantages" @click.prevent="$scroll.onShowView($event); emit('close')">
+                  Преимущества
+                </a>
               </div>
               <div class="nav-wrap">
-                <a class="nav-link" href="#order" @click.prevent="scroll">Запись</a>
+                <a class="nav-link" href="#order" @click.prevent="$scroll.onShowView($event); emit('close')">
+                  Запись
+                </a>
               </div>
               <div class="nav-wrap">
-                <a class="nav-link" href="#partners" @click.prevent="scroll">Партнеры</a>
+                <a class="nav-link" href="#partners" @click.prevent="$scroll.onShowView($event); emit('close')">
+                  Партнеры
+                </a>
               </div>
             </div>
           </div>
@@ -41,15 +49,6 @@
   });
 
   const emit = defineEmits([ 'close' ]);
-
-  function scroll(e) {
-    const id = e.target.getAttribute('href');
-    if(!id) return;
-    const el = document.querySelector(id);
-    if(!el) return;
-    el.scrollIntoView({ behavior: 'smooth' });
-    emit('close');
-  }
 </script>
 
 <style scoped lang="scss">
