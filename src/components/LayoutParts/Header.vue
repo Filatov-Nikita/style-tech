@@ -11,7 +11,7 @@
   </header>
 </template>
 
-<script setup lang="ts">
+<script setup>
   import useAppGrid from '@/composables/useAppGrid';
   import NavMenu from './NavMenu.vue';
   import NavScreen from './NavScreen.vue';

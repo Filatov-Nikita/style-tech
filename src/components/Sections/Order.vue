@@ -26,7 +26,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
   import Calendar from '@/components/Order/Calendar.vue';
   import { ref } from 'vue';
 

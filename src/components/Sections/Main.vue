@@ -22,7 +22,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
   import Header from '../LayoutParts/Header.vue';
 </script>
 

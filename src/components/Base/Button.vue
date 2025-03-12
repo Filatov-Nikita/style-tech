@@ -4,9 +4,7 @@
   </button>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup></script>
 
 <style scoped>
   .base-btn {

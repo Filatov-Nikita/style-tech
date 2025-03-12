@@ -9,7 +9,7 @@
           <div class="text-block">
             <p class="text-block__text">Персональный гид-эксперт по бытовой технике Планеты поможет вам выбрать мощный робот-пылесос, самый бесшумный холодильник или Дайсон в комплектации, которая точно вас порадует.</p>
             <p class="text-block__caption">Консультация бесплатная / необходима предварительная запись</p>
-            <BaseButton class="text-block__btn">Записаться</BaseButton>
+            <BaseButton class="text-block__btn" @click="$order.show">Записаться</BaseButton>
           </div>
         </div>
       </div>
@@ -17,9 +17,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup></script>
 
 <style scoped lang="scss">
   .section-about {
