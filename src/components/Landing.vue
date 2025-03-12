@@ -6,6 +6,7 @@
     <div class="section-devices">
       <img class="section-devices__photo" width="2160" height="1417" src="@/assets/images/devices.jpg" alt="devices" loading="lazy">
     </div>
+    <SectionOrder class="page__order" />
     <SectionPartners class="page__partners" />
     <Footer class="page__footer" />
   </main>
@@ -16,6 +17,7 @@
   import SectionAbout from './Sections/About.vue';
   import SectionAdvantages from './Sections/Advantages.vue';
   import SectionPartners from './Sections/Partners.vue';
+  import SectionOrder from './Sections/Order.vue';
   import Footer from './LayoutParts/Footer.vue';
 </script>
 
@@ -43,7 +45,7 @@
       }
     }
 
-    &__adv, &__partners, &__footer {
+    &__adv, &__partners, &__footer, &__order {
       padding: 80px 0;
 
       @include sm {
