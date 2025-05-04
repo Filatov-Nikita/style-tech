@@ -2,8 +2,11 @@
 @use './fonts.scss';
 @use './base.scss';
 @use './components/index.scss';
+@use './utilities.scss';
 
 :root {
+  --color-black: #222222;
+  --color-white: #FFFFFF;
   --color-primary: #E94601;
   --color-primary-hover: #D23F01;
   --color-accent: #FF540B;

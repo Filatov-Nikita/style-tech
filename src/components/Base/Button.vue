@@ -21,4 +21,9 @@
   .base-btn:hover {
     background-color: var(--color-primary-hover);
   }
+
+  .base-btn:disabled {
+    cursor: not-allowed;
+    background-color: #737373;
+  }
 </style>

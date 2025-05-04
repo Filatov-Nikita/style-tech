@@ -1,0 +1,11 @@
+.close-modal {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
