@@ -5,6 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Vue</title>
+    <script>
+      var resolveCaptcha;
+      var captchaIsReady = new Promise((res, rej) => {
+        resolveCaptcha = res;
+      });
+
+      var onloadCallback = function() {
+        if(resolveCaptcha) {
+          resolveCaptcha();
+        }
+      };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
   </head>
   <body>
     <div id="app"></div>

@@ -9,6 +9,7 @@
     <SectionOrder class="page__order" />
     <SectionPartners class="page__partners" />
     <Footer class="page__footer" />
+    <AuthModal v-model:showed="auth.showedModal.value" @auth:completed="auth.onComplete" />
   </main>
 </template>
 
@@ -19,6 +20,10 @@
   import SectionPartners from './Sections/Partners.vue';
   import SectionOrder from './Sections/Order.vue';
   import Footer from './LayoutParts/Footer.vue';
+  import AuthModal from '@/components/Auth/Modal.vue';
+  import { init as initAuth } from '@/composables/useAuth';
+
+  const auth = initAuth();
 </script>
 
 <style scoped lang="scss">
