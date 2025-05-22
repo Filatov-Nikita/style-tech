@@ -8,6 +8,7 @@ import BaseModal from './components/Base/Modal/index.vue';
 import BaseModalCard from './components/Base/Modal/Card.vue';
 import BaseIcon from './components/Base/Icon.vue';
 import BaseInput from './components/Base/Input.vue';
+import BaseSpinner from './components/Base/Spinner.vue';
 import VCalendar from 'v-calendar';
 import VOrder from './plugins/order';
 import VScroll from './plugins/scroll';
@@ -24,5 +25,6 @@ app.component('BaseModal', BaseModal);
 app.component('BaseModalCard', BaseModalCard);
 app.component('BaseIcon', BaseIcon);
 app.component('BaseInput', BaseInput);
+app.component('BaseSpinner', BaseSpinner);
 
 app.mount('#app');
