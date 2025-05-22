@@ -1,6 +1,6 @@
 <template>
   <svg aria-hidden="true">
-    <use :href="symbolId" :fill="color" />
+    <use :href="symbolId" :fill="fill" />
   </svg>
 </template>
 
@@ -19,13 +19,17 @@ export default defineComponent({
       required: true,
     },
     color: {
+      default: undefined,
       type: String,
-      default: '#000000',
     },
   },
   setup(props) {
-    const symbolId = computed(() => `#${props.prefix}-${props.name}`)
-    return { symbolId }
+    const symbolId = computed(() => `#${props.prefix}-${props.name}`);
+    const fill = computed(() => props.color ? props.color : 'currentColor');
+    return {
+      symbolId,
+      fill,
+    };
   },
 })
 </script>
