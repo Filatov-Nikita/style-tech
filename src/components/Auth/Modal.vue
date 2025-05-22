@@ -6,8 +6,14 @@
       </button>
       <div class="auth-card__body">
         <KeepAlive>
-          <AuthForm v-if="step === 'data'" @submit="onAuth" :pending="authPending" />
-          <CodeForm v-else-if="step === 'code'" @submit="onCode" :pending="checkCodePending" />
+          <Transition
+            mode="out-in"
+            leave-active-class="animate__animated animate__fadeOut animate__faster"
+            enter-active-class="animate__animated animate__fadeIn animate__faster"
+          >
+            <AuthForm v-if="step === 'data'" @submit="onAuth" :pending="authPending" />
+            <CodeForm v-else-if="step === 'code'" @submit="onCode" :pending="checkCodePending" />
+          </Transition>
         </KeepAlive>
       </div>
     </BaseModalCard>
