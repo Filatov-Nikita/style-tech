@@ -3,7 +3,7 @@
     <div class="wrapper">
       <h2 class="h2 section-order__title">Запись на услугу</h2>
       <div class="section-order__grid">
-        <div class="section-order__left">
+        <div class="section-order__left" v-if="grid.lg">
           <Calendar v-model="orderDate" :disabledDates="disabledDates" />
         </div>
         <div class="section-order__right">
@@ -12,6 +12,9 @@
             <div class="option__text">
               <Categories :items="categories" v-model:activeItem="activeCategory" />
             </div>
+          </div>
+          <div class="option option--mb section-order__calendar-mobile" v-if="!grid.lg">
+            <Calendar v-model="orderDate" :disabledDates="disabledDates" />
           </div>
           <div class="option option--mb">
             <div class="option__label option__label--mb-sm">Дата</div>
@@ -61,6 +64,9 @@
   import SuccessModal from '../Order/SuccessModal.vue';
   import { useNotification } from '@kyvg/vue3-notification';
   import useForm from '@/composables/useForm';
+  import useAppGrid from '@/composables/useAppGrid';
+
+  const grid = useAppGrid();
 
   const { data, loading, send } = await useRequest(CategoriesRepo.all, {
     errorMessage: 'Не удалось загрузить данные!'
@@ -145,7 +151,6 @@
         text: res.data.error,
       });
     } else {
-      console.log(res);
       successModal.value = true;
     }
   }
@@ -195,8 +200,7 @@
       width: calc(45% - 35px);
 
       @include lg {
-        width: 100%;
-        max-width: 600px;
+        width: calc(57% - 35px);
       }
     }
 
@@ -204,6 +208,10 @@
       width: calc(55% - 35px);
 
       @include lg {
+        width: calc(43% - 35px);
+      }
+
+      @include md {
         width: 100%;
       }
     }
@@ -211,14 +219,25 @@
     &__btn {
       margin-top: 40px;
 
+      @include md {
+        width: 100%;
+      }
+
       @include sm {
         margin-top: 30px;
-        width: 100%;
       }
     }
 
     &__time {
       max-width: 240px;
+
+      @include lg {
+        max-width: 100%;
+      }
+    }
+
+    &__calendar-mobile {
+      max-width: 600px;
     }
   }
 

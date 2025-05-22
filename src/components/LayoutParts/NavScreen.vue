@@ -65,7 +65,11 @@
   }
 
   .body {
-    padding-top: 30px;
+    padding-top: 40px;
+
+    @include sm {
+      padding-top: 24px;
+    }
   }
 
   .head {

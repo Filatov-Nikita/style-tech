@@ -1,6 +1,7 @@
 <template>
   <div class="items">
     <BaseTab
+      class="item-one"
       v-for="item in items"
       :active="item.id === activeItem?.id"
       @click="onClick(item)"
@@ -35,5 +36,19 @@
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 14px;
+  }
+
+  .item-one {
+    @include lg {
+      flex-grow: 1;
+    }
+
+    @include md {
+      flex-grow: initial;
+    }
+
+    @include sm {
+      width: 100%;
+    }
   }
 </style>

@@ -113,7 +113,7 @@
     padding: 60px 20px 30px;
 
     @include sm {
-      padding: 40px 20px 16px;
+      padding: 50px 16px 30px;
     }
 
     &__close {

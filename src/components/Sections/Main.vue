@@ -100,10 +100,8 @@
 
   .sticker {
     position: relative;
-    border-radius: 50px;
-    background-image: url('@/assets/images/texture.png');
-    background-size: cover;
-    padding: 60px 40px 30px 45px;
+    z-index: 1;
+    padding: 60px 40px 115px 45px;
 
     @include sm {
       padding: 30px 10px 50px 25px;
@@ -115,7 +113,6 @@
       font-size: 24px;
       line-height: 1.25;
       color: var(--color-accent);
-      margin-bottom: -25px;
 
       @include sm {
         font-size: 16px;
@@ -123,7 +120,45 @@
     }
 
     &__btn {
-      transform: translateY(100%);
+      position: absolute;
+      bottom: 0;
+      transform: translateY(50%);
+    }
+
+    &::before {
+      content: '';
+      border-radius: 50px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0.1;
+      z-index: -1;
+      background-image: url('@/assets/images/texture.png');
+      background-size: cover;
+
+      @include sm {
+        border-radius: 30px;
+      }
+    }
+
+    &::after {
+      content: '';
+      border-radius: 50px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: -2;
+      backdrop-filter: blur(48px);
+      box-shadow: inset 0 0 68px 0 rgba(255, 255, 255, 0.05);
+      background: rgba(224, 198, 185, 0.03);
+
+      @include sm {
+        border-radius: 30px;
+      }
     }
   }
 

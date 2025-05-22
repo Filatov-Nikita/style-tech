@@ -56,6 +56,10 @@
     padding: 30px 20px 70px 30px;
 
     @include lg {
+      width: calc(50% - 14px);
+    }
+
+    @include md {
       width: calc(100% - 14px);
     }
 

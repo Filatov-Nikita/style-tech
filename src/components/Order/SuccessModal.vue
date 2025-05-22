@@ -8,8 +8,8 @@
         <p class="or-success__title">
           Ваша запись успешно завершена!
         </p>
-        <p class="or-success__row1">{{ categoryName }} - {{ date }} в {{ time }}</p>
-        <p>Ожидайте подтверждение по телефону.</p>
+        <p class="or-success__row1">{{ categoryName }} - {{ date }} в&nbsp;{{ time }}</p>
+        <p>Ожидайте подтверждение по&nbsp;телефону.</p>
         <BaseButton class="or-success__btn" theme="black" @click="finish">
           Завершить
         </BaseButton>
@@ -62,7 +62,7 @@
     padding: 60px 20px 30px;
 
     @include sm {
-      padding: 50px 20px 16px;
+      padding: 60px 16px 30px;
     }
 
     &__body {

@@ -45,8 +45,34 @@
     overflow: hidden;
     width: calc(50% - 30px);
     margin: 15px;
-    background-image: url('@/assets/images/texture.png');
-    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: url('@/assets/images/texture.png');
+      background-size: cover;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      backdrop-filter: blur(48px);
+      box-shadow: inset 0 0 68px 0 rgba(255, 255, 255, 0.05);
+      background: rgba(224, 198, 185, 0.03);
+      z-index: -2;
+    }
 
     @include md {
       width: 100%;
